@@ -9,9 +9,19 @@ import javax.ws.rs.core.MediaType;
 public class MapaTematico {
 	
 	@GET
+	@Path("/texto")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getMessages() {
 		return "Mostra mapa NEXUS!";
 	}
+	
+	@GET
+	@Path("/geojson")
+	@Produces(MediaType.TEXT_PLAIN ) //+ "; charset=utf-8"
+	public String getMessagesJson() {
+		return "Mostra mapa GeoJson";
+	}
+
+
 	
 }
