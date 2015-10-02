@@ -1,0 +1,6 @@
+-- Schema: dados
+
+-- DROP SCHEMA dados;
+
+CREATE SCHEMA dados
+  AUTHORIZATION postgres;
